@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.menu.daily.DailyFragment"
+    android:orientation="vertical"
+    android:background="@color/abu1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen20"
+        android:paddingLeft="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen16"
+        android:layout_marginRight="@dimen/dimen16"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rel_daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textdaily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/dimensp36"
+                android:text="Daily Activity"
+                android:textColor="@color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/daily_act"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen180"
+                android:layout_marginTop="@dimen/dimen14"
+                android:layout_below="@id/textdaily">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen30">
+
+            <TextView
+                android:id="@+id/friendact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/dimensp36"
+                android:text="Friend List"
+                android:textColor="@color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/friend_act"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen209"
+                android:layout_marginTop="@dimen/dimen14"
+                android:layout_below="@id/friendact">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

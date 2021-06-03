@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_friend"
+                android:layout_width="@dimen/dimen150"
+                android:layout_height="@dimen/dimen150"
+                android:layout_marginTop="@dimen/dimen20"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_round"/>
+
+
+            <TextView
+                android:id="@+id/txt_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/blue_gray_900"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen12"
+                android:layout_marginBottom="@dimen/dimen12"
+                android:text="Friend Name"
+                android:textSize="@dimen/dimen12"/>
+
+
+        </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

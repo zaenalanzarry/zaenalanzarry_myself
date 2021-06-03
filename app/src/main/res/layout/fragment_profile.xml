@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.menu.profile.ProfileFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/abu1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/abu2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@color/abu3">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilehome"
+                        android:layout_width="@dimen/dimen220"
+                        android:layout_height="@dimen/dimen150"
+                        android:layout_marginTop="@dimen/dimen30"
+                        android:layout_marginBottom="@dimen/dimen30"
+                        android:src="@drawable/foto_home"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/abu1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen20"
+                    android:layout_marginTop="@dimen/dimen20"
+                    android:layout_marginBottom="@dimen/dimen32">
+
+                    <TextView
+                        android:id="@+id/textHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perkenalkan Nama Saya"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="@dimen/dimensp18" />
+
+                    <TextView
+                        android:id="@+id/dua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zaenal Anzarry"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="@dimen/dimen4"
+                        android:textSize="@dimen/dimensp18"
+                        android:layout_toRightOf="@id/textHome"/>
+
+                    <TextView
+                        android:id="@+id/tiga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saya Lahir di"
+                        android:layout_below="@id/textHome"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="@dimen/dimensp18" />
+
+                    <TextView
+                        android:id="@+id/empat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/dimen4"
+                        android:text="Bandung, 02 Desember "
+                        android:layout_below="@id/textHome"
+                        android:layout_toEndOf="@id/tiga"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="@dimen/dimensp18" />
+
+                    <TextView
+                        android:id="@+id/lima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="1999. "
+                        android:layout_below="@id/empat"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="@dimen/dimensp18" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen30"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginEnd="@dimen/dimen20">
+
+            <TextView
+                android:id="@+id/txt_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/dimensp28"
+                android:text="Kontak Pribadi"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_contact"
+                android:backgroundTint="@color/white"
+                android:layout_margin="@dimen/dimen16"
+                android:src="@drawable/telephone"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_contact"
+                android:layout_toEndOf="@id/phone"
+                android:layout_margin="@dimen/dimen16"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/gmail"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_contact"
+                android:layout_toEndOf="@id/email"
+                android:layout_margin="@dimen/dimen16"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/github"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_contact"
+                android:layout_toEndOf="@id/github"
+                android:layout_margin="@dimen/dimen16"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/instagram"
+                tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+            <Button
+                android:id="@+id/maps"
+                android:layout_width="@dimen/dimen280"
+                android:layout_height="@dimen/dimen40"
+                android:layout_marginTop="@dimen/dimen24"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Find Me"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="@dimen/dimen280"
+                android:layout_height="@dimen/dimen40"
+                android:layout_marginTop="@dimen/dimen24"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="About"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>
